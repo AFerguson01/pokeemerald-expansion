@@ -2562,6 +2562,12 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Dragonite[] = INCBIN_U8("graphics/pokemon/dragonite/footprint.1bpp");
 #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_ShadowDragonite[] = INCBIN_U32("graphics/pokemon/shadow_dragonite/anim_front.4bpp.lz");
+    const u32 gMonPalette_ShadowDragonite[] = INCBIN_U32("graphics/pokemon/shadow_dragonite/normal.gbapal.lz");
+    const u32 gMonBackPic_ShadowDragonite[] = INCBIN_U32("graphics/pokemon/shadow_dragonite/back.4bpp.lz");
+    const u32 gMonShinyPalette_ShadowDragonite[] = INCBIN_U32("graphics/pokemon/shadow_dragonite/shiny.gbapal.lz");
+    const u8 gMonIcon_ShadowDragonite[] = INCBIN_U8("graphics/pokemon/shadow_dragonite/icon.4bpp");
 #endif //P_FAMILY_DRATINI
 
 #if P_FAMILY_MEWTWO

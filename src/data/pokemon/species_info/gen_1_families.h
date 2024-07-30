@@ -15611,6 +15611,65 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sDragoniteLevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
     },
+
+    [SPECIES_SHADOW_DRAGONITE] =
+    {
+        .baseHP        = 91,
+        .baseAttack    = 134,
+        .baseDefense   = 95,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_POISON),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 300,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 270,
+    #else
+        .expYield = 218,
+    #endif
+        .evYield_Attack = 3,
+        .itemRare = ITEM_DRAGON_SCALE,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 40,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_SHADOW_SHIELD },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("ShadowTest"),
+        .cryId = CRY_DRAGONITE,
+        .natDexNum = NATIONAL_DEX_SHADOW_DRAGONITE,
+        .categoryName = _("Dragon"),
+        .height = 22,
+        .weight = 2100,
+        .description = COMPOUND_STRING(
+            "It can circle the globe in just 16 hours.\n"
+            "It is a kindhearted Pokémon that leads\n"
+            "lost and foundering ships in a storm\n"
+            "to the safety of land."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 309,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_ShadowDragonite,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_ShadowDragonite,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_ShadowDragonite,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_ShadowDragonite,
+        .shinyPalette = gMonShinyPalette_ShadowDragonite,
+        .iconSprite = gMonIcon_ShadowDragonite,
+        .iconPalIndex = 2,
+        FOOTPRINT(Dragonite)
+        .levelUpLearnset = sDragoniteLevelUpLearnset,
+        .teachableLearnset = sDragoniteTeachableLearnset,
+    },
 #endif //P_FAMILY_DRATINI
 
 #if P_FAMILY_MEWTWO
