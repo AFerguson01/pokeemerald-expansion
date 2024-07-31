@@ -1074,3 +1074,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/PorytilesTutorialMap/scripts.inc"
+
+	.include "data/maps/BellfeTown/scripts.inc"
