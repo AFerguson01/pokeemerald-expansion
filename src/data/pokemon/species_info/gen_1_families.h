@@ -15621,7 +15621,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpAttack  = 100,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_POISON),
-        .catchRate = 1,
+        .catchRate = 100,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,
     #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -15667,7 +15667,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_ShadowDragonite,
         .iconPalIndex = 2,
         FOOTPRINT(Dragonite)
-        .levelUpLearnset = sDragoniteLevelUpLearnset,
+        .levelUpLearnset = sShadowDragoniteLevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
     },
 #endif //P_FAMILY_DRATINI
