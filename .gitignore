@@ -1,1 +1,5 @@
-
+build/
+porymap.*.cfg
+.vscode/
+*.diff
+*.elf
