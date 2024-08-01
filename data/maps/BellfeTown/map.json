@@ -2,7 +2,7 @@
   "id": "MAP_BELLFE_TOWN",
   "name": "BellfeTown",
   "layout": "LAYOUT_BELLFE_TOWN",
-  "music": "MUS_LITTLEROOT",
+  "music": "MUS_TITLE",
   "region_map_section": "MAPSEC_BELLFE_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

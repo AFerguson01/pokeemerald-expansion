@@ -5312,7 +5312,7 @@
       "height": 30,
       "border_width": 3,
       "border_height": 4,
-      "primary_tileset": "gTileset_Main",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/BellfeTown/border.bin",
       "blockdata_filepath": "data/layouts/BellfeTown/map.bin"
