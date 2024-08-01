@@ -4726,6 +4726,19 @@ static const struct LevelUpMove sDragoniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
+
+static const struct LevelUpMove sShadowDragoniteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_CLAW),
+    LEVEL_UP_MOVE( 1, MOVE_BULK_UP),
+    LEVEL_UP_MOVE( 1, MOVE_TOXIC),
+    LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
+    LEVEL_UP_MOVE(10, MOVE_THUNDER_WAVE),
+    LEVEL_UP_MOVE(20, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(35, MOVE_BRICK_BREAK),
+    LEVEL_UP_MOVE(45, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(60, MOVE_HYPER_BEAM),
+    LEVEL_UP_END
+};
 #endif //P_FAMILY_DRATINI
 
 #if P_FAMILY_MEWTWO
