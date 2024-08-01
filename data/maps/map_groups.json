@@ -1,6 +1,7 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
+    "gMapGroups_EventLocations",
     "gMapGroup_TownsAndRoutesOLD",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -38,6 +39,9 @@
   ],
   "gMapGroup_TownsAndRoutes": [
     "BellfeTown"
+  ],
+  "gMapGroups_EventLocations": [
+    "CelebiStartEvent"
   ],
   "gMapGroup_TownsAndRoutesOLD": [
     "PetalburgCity",

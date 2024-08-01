@@ -5316,6 +5316,18 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/BellfeTown/border.bin",
       "blockdata_filepath": "data/layouts/BellfeTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELEBI_START_EVENT",
+      "name": "CelebiStartEvent_Layout",
+      "width": 20,
+      "height": 24,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/CelebiStartEvent/border.bin",
+      "blockdata_filepath": "data/layouts/CelebiStartEvent/map.bin"
     }
   ]
 }

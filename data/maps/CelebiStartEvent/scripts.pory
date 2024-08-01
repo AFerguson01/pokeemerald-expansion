@@ -1,0 +1,97 @@
+raw `
+CelebiStartEvent_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, init
+	.byte 0
+`
+
+script CelebiStartEvent_TriggerSpawnScript {
+    lockall
+    clearflag(FLAG_TEMP_1)
+    playmoncry(SPECIES_HO_OH, 70)
+
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, StepBack)
+    waitmovement(0)
+    
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, toHoOh)
+    waitmovement(0)
+    playmoncry(SPECIES_HO_OH, 70)
+    waitmoncry()
+
+    applymovement(OBJ_EVENT_ID_CAMERA, fromHoOh)
+    waitmovement(0)
+    special(RemoveCameraObject)
+
+    setvar(VAR_TESTING, 1)
+    releaseall
+}
+
+script CelebiStartEvent_FlyAway {
+    lockall
+
+    playse(SE_PIN)
+    applymovement(1, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    faceplayer
+    waitmovement(0)
+    applymovement(1, toPlayer_1)
+    waitmovement(0)
+
+    playmoncry(SPECIES_HO_OH, 70)
+    waitmoncry()
+
+    applymovement(1, toPlayer_2)
+    applymovement(OBJ_EVENT_ID_PLAYER, lookUp)
+    waitmovement(0)
+
+    removeobject(1)
+    setflag(FLAG_TEMP_1)
+    clearflag(FLAG_TEMP_2)
+    releaseall
+}
+
+script CelebiStartEvent_ReceivedItem {
+    lockall
+    giveitem(ITEM_SACRED_ASH, 1)
+    setflag(FLAG_TEMP_2)
+    removeobject(2)
+    releaseall
+}
+
+script init {
+    setflag(FLAG_TEMP_1)
+    setflag(FLAG_TEMP_2)
+}
+
+movement StepBack {
+    jump_in_place_up
+}
+
+movement toHoOh {
+    walk_diag_northeast * 5
+    walk_up * 3
+}
+
+movement toPlayer_1 {
+    walk_left * 5
+}
+
+movement toPlayer_2 {
+    fly_up
+}
+
+movement lookUp {
+    face_up
+}
+
+movement fromHoOh {
+    walk_fast_down * 3
+    walk_diag_southwest * 5
+}
+
+text testtext {
+    "Test..."
+}
