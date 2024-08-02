@@ -719,7 +719,7 @@ $(FLDEFFGFXDIR)/secret_power_tree.4bpp: %.4bpp: %.png
 $(FLDEFFGFXDIR)/record_mix_lights.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 1
 
-$(OBJEVENTGFXDIR)/people/celebi.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/celebi.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 3 -mheight 2
 
 graphics/door_anims/battle_tower_multi_corridor.4bpp: %.4bpp: %.png

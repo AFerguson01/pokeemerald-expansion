@@ -1710,6 +1710,22 @@
       "y": 4,
       "width": 1,
       "height": 1
-    }
+    },
+    {
+        "map_section": "MAPSEC_BELLFE_TOWN",
+        "name": "BELLFE TOWN",
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      {
+        "map_section": "MAPSEC_CELEBI_START_EVENT",
+        "name": "CELEBI START EVENT",
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      }
   ]
 }
