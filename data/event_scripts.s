@@ -1076,3 +1076,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BellfeTown/scripts.inc"
 
 	.include "data/maps/CelebiStartEvent/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"

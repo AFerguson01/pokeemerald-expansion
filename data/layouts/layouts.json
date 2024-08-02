@@ -5316,6 +5316,18 @@
       "secondary_tileset": "gTileset_BelffeTown",
       "border_filepath": "data/layouts/CelebiStartEvent/border.bin",
       "blockdata_filepath": "data/layouts/CelebiStartEvent/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Forest",
+      "secondary_tileset": "gTileset_BelffeTown",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
     }
   ]
 }
