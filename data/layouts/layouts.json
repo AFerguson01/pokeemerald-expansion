@@ -5294,18 +5294,6 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
     {
-      "id": "LAYOUT_PORYTILES_TUTORIAL_MAP",
-      "name": "PorytilesTutorialMap_Layout",
-      "width": 20,
-      "height": 20,
-      "border_width": 2,
-      "border_height": 2,
-      "primary_tileset": "gTileset_PorytilesPrimaryTutorial",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/PorytilesTutorialMap/border.bin",
-      "blockdata_filepath": "data/layouts/PorytilesTutorialMap/map.bin"
-    },
-    {
       "id": "LAYOUT_BELLFE_TOWN",
       "name": "BellfeTown_Layout",
       "width": 30,
