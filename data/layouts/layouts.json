@@ -5311,9 +5311,9 @@
       "width": 30,
       "height": 30,
       "border_width": 3,
-      "border_height": 4,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "border_height": 2,
+      "primary_tileset": "gTileset_Forest",
+      "secondary_tileset": "gTileset_BelffeTown",
       "border_filepath": "data/layouts/BellfeTown/border.bin",
       "blockdata_filepath": "data/layouts/BellfeTown/map.bin"
     },
@@ -5324,8 +5324,8 @@
       "height": 24,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RusturfTunnel",
+      "primary_tileset": "gTileset_Forest",
+      "secondary_tileset": "gTileset_BelffeTown",
       "border_filepath": "data/layouts/CelebiStartEvent/border.bin",
       "blockdata_filepath": "data/layouts/CelebiStartEvent/map.bin"
     }
