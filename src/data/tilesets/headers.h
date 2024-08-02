@@ -825,25 +825,24 @@ const struct Tileset gTileset_UnionRoom =
     .metatileAttributes = gMetatileAttributes_UnionRoom,
     .callback = NULL,
 };
-
-const struct Tileset gTileset_PorytilesPrimaryTutorial =
+const struct Tileset gTileset_Forest =
 {
     .isCompressed = TRUE,
     .isSecondary = FALSE,
-    .tiles = gTilesetTiles_PorytilesPrimaryTutorial,
-    .palettes = gTilesetPalettes_PorytilesPrimaryTutorial,
-    .metatiles = gMetatiles_PorytilesPrimaryTutorial,
-    .metatileAttributes = gMetatileAttributes_PorytilesPrimaryTutorial,
+    .tiles = gTilesetTiles_Forest,
+    .palettes = gTilesetPalettes_Forest,
+    .metatiles = gMetatiles_Forest,
+    .metatileAttributes = gMetatileAttributes_Forest,
     .callback = NULL,
 };
 
-const struct Tileset gTileset_Main =
+const struct Tileset gTileset_BelffeTown =
 {
     .isCompressed = TRUE,
-    .isSecondary = FALSE,
-    .tiles = gTilesetTiles_Main,
-    .palettes = gTilesetPalettes_Main,
-    .metatiles = gMetatiles_Main,
-    .metatileAttributes = gMetatileAttributes_Main,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BelffeTown,
+    .palettes = gTilesetPalettes_BelffeTown,
+    .metatiles = gMetatiles_BelffeTown,
+    .metatileAttributes = gMetatileAttributes_BelffeTown,
     .callback = NULL,
 };
