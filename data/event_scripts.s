@@ -1079,4 +1079,4 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route3/scripts.inc"
 
-	.include "data/maps/BellfeTown_Lake/scripts.inc"
+	.include "data/maps/Route1/scripts.inc"
