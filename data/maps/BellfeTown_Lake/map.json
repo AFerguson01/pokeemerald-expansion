@@ -29,14 +29,21 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_BELLFE_TOWN",
-      "dest_warp_id": "0"
+      "dest_warp_id": "5"
     },
     {
       "x": 59,
-      "y": 14,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_BELLFE_TOWN",
-      "dest_warp_id": "0"
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 59,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
