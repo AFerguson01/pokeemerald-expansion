@@ -22962,7 +22962,7 @@ script_data     0x08219450   0x12ceb8
                 0x08345f45                init
                 0x08345f6a                testtext
                 0x08345f72                Route3_MapScripts
-                0x08345f73                Route_1_MapScripts
+                0x08345f73                Route1_MapScripts
  script_data    0x08345f74      0x34f data/field_effect_scripts.o
                 0x08345f74                gFieldEffectScriptPointers
                 0x0834608c                gFieldEffectScript_ExclamationMarkIcon1
@@ -43074,7 +43074,7 @@ lib_text        0x08346308     0x2260
  .rodata        0x08ca40c4    0x18ec8 data/map_events.o
                 0x08ca40fc                BellfeTown_MapEvents
                 0x08ca4148                Route3_MapEvents
-                0x08ca417c                Route_1_MapEvents
+                0x08ca417c                Route1_MapEvents
                 0x08ca4220                CelebiStartEvent_MapEvents
                 0x08ca441c                PetalburgCity_MapEvents
                 0x08ca487c                SlateportCity_MapEvents
@@ -44916,9 +44916,9 @@ lib_text        0x08346308     0x2260
                 0x08d60978                Route3_Layout_Border
                 0x08d60984                Route3_Layout_Blockdata
                 0x08d6108c                Route3_Layout
-                0x08d610a8                Route_1_Layout_Border
-                0x08d610b4                Route_1_Layout_Blockdata
-                0x08d61ec4                Route_1_Layout
+                0x08d610a8                Route1_Layout_Border
+                0x08d610b4                Route1_Layout_Blockdata
+                0x08d61ec4                Route1_Layout
                 0x08d61ee0                gMapLayouts
                 0x08d65eec                gMapGroup_TownsAndRoutes
                 0x08d65ef8                gMapGroups_EventLocations
