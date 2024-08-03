@@ -33,13 +33,6 @@
     },
     {
       "x": 59,
-      "y": 17,
-      "elevation": 0,
-      "dest_map": "MAP_BELLFE_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 59,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_BELLFE_TOWN",
