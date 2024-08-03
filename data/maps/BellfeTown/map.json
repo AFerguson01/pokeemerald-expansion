@@ -43,6 +43,20 @@
       "elevation": 0,
       "dest_map": "MAP_BELLFE_TOWN_LAKE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE3",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
