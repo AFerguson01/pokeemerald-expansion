@@ -19753,100 +19753,7 @@
     ]
   },
   {
-    "name": "Test",
-    "width": 3,
-    "height": 4,
-    "primary_tileset": "gTileset_Forest",
-    "secondary_tileset": "",
-    "metatiles": [
-      {
-        "x": 0,
-        "y": 0,
-        "metatile_id": 69,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 1,
-        "y": 0,
-        "metatile_id": 70,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 2,
-        "y": 0,
-        "metatile_id": 71,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 0,
-        "y": 1,
-        "metatile_id": 8,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 1,
-        "y": 1,
-        "metatile_id": 9,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 2,
-        "y": 1,
-        "metatile_id": 10,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 0,
-        "y": 2,
-        "metatile_id": 16,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 1,
-        "y": 2,
-        "metatile_id": 17,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 2,
-        "y": 2,
-        "metatile_id": 18,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 0,
-        "y": 3,
-        "metatile_id": 24,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 1,
-        "y": 3,
-        "metatile_id": 25,
-        "collision": 0,
-        "elevation": 3
-      },
-      {
-        "x": 2,
-        "y": 3,
-        "metatile_id": 26,
-        "collision": 0,
-        "elevation": 3
-      }
-    ]
-  },
-  {
-    "name": "Test2",
+    "name": "Tree",
     "width": 3,
     "height": 2,
     "primary_tileset": "gTileset_Forest",
@@ -19855,42 +19762,42 @@
       {
         "x": 0,
         "y": 0,
-        "metatile_id": 8,
+        "metatile_id": 32,
         "collision": 0,
         "elevation": 3
       },
       {
         "x": 1,
         "y": 0,
-        "metatile_id": 9,
+        "metatile_id": 33,
         "collision": 0,
         "elevation": 3
       },
       {
         "x": 2,
         "y": 0,
-        "metatile_id": 10,
+        "metatile_id": 34,
         "collision": 0,
         "elevation": 3
       },
       {
         "x": 0,
         "y": 1,
-        "metatile_id": 69,
+        "metatile_id": 108,
         "collision": 0,
         "elevation": 3
       },
       {
         "x": 1,
         "y": 1,
-        "metatile_id": 70,
+        "metatile_id": 109,
         "collision": 0,
         "elevation": 3
       },
       {
         "x": 2,
         "y": 1,
-        "metatile_id": 71,
+        "metatile_id": 110,
         "collision": 0,
         "elevation": 3
       }
