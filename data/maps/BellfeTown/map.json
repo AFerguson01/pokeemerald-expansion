@@ -24,10 +24,24 @@
   ],
   "warp_events": [
     {
-      "x": 17,
-      "y": 14,
+      "x": 0,
+      "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_CELEBI_START_EVENT",
+      "dest_map": "MAP_BELLFE_TOWN_LAKE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN_LAKE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN_LAKE",
       "dest_warp_id": "0"
     }
   ],
