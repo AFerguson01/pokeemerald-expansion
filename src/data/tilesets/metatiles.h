@@ -212,3 +212,6 @@ const u16 gMetatileAttributes_Forest[] = INCBIN_U16("data/tilesets/primary/fores
 
 const u16 gMetatiles_BelffeTown[] = INCBIN_U16("data/tilesets/secondary/belffe_town/metatiles.bin");
 const u16 gMetatileAttributes_BelffeTown[] = INCBIN_U16("data/tilesets/secondary/belffe_town/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPrimaryTutorial[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_tutorial/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPrimaryTutorial[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_tutorial/metatile_attributes.bin");
