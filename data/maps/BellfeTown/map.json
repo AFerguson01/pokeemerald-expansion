@@ -53,25 +53,15 @@
       "x": 0,
       "y": 13,
       "elevation": 0,
-<<<<<<< Updated upstream
       "dest_map": "MAP_ROUTE1",
       "dest_warp_id": "0"
-=======
-      "dest_map": "MAP_BELLFE_TOWN_LAKE",
-      "dest_warp_id": "3"
->>>>>>> Stashed changes
     },
     {
       "x": 0,
       "y": 12,
       "elevation": 0,
-<<<<<<< Updated upstream
       "dest_map": "MAP_ROUTE1",
       "dest_warp_id": "0"
-=======
-      "dest_map": "MAP_BELLFE_TOWN_LAKE",
-      "dest_warp_id": "2"
->>>>>>> Stashed changes
     },
     {
       "x": 31,
@@ -91,13 +81,8 @@
       "x": 0,
       "y": 21,
       "elevation": 0,
-<<<<<<< Updated upstream
       "dest_map": "MAP_ROUTE1",
       "dest_warp_id": "0"
-=======
-      "dest_map": "MAP_BELLFE_TOWN_LAKE",
-      "dest_warp_id": "1"
->>>>>>> Stashed changes
     },
     {
       "x": 3,
