@@ -5296,8 +5296,8 @@
     {
       "id": "LAYOUT_BELLFE_TOWN",
       "name": "BellfeTown_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 39,
+      "height": 50,
       "border_width": 3,
       "border_height": 2,
       "primary_tileset": "gTileset_Forest",
