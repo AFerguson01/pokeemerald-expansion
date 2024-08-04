@@ -1,0 +1,61 @@
+raw `
+.set LOCALID_RIVAL, 3
+
+BellfeTown_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, BellfeTown_InitScript
+	.byte 0
+`
+
+script BellfeTown_InitScript {
+    setflag(FLAG_HIDE_RIVAL)
+}
+
+script BellfeTown_GetPokemonStartScript {
+    lockall
+    setvar(VAR_BELLFE_TOWN_STATE, 1)
+    addobject(LOCALID_RIVAL)
+
+    applymovement(LOCALID_RIVAL, RivalToPlayer_1)
+    waitmovement(0)
+
+    playse(SE_PIN)
+    applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+    waitmovement(0)
+    applymovement(LOCALID_RIVAL, Common_Movement_Delay48)
+	waitmovement(0)
+
+    applymovement(LOCALID_RIVAL, RivalToPlayer_2)
+    waitmovement(0)
+
+    msgbox(rivalMsg1, MSGBOX_NPC)
+    waitmessage
+
+    applymovement(LOCALID_RIVAL, RivalToLab_1)
+    applymovement(OBJ_EVENT_ID_PLAYER, PlayerToLab_1)
+    waitmovement(0)
+    
+    warp(MAP_ROUTE1, 59, 7)
+    waitstate
+	releaseall
+	end
+}
+
+movement RivalToPlayer_1 {
+    walk_right * 3
+    face_up
+}
+movement RivalToPlayer_2 {
+    walk_fast_up
+}
+text rivalMsg1 {
+    "Ah! {PLAYER}! Quickly, follow me!"
+}
+
+movement RivalToLab_1 {
+    walk_fast_down
+    walk_fast_left * 3
+}
+movement PlayerToLab_1 {
+    walk_fast_down * 2
+    walk_fast_left * 3
+}

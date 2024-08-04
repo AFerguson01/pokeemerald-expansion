@@ -1,7 +1,27 @@
 raw `
+.set LOCALID_RIVAL, 1
+
 Route1_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, Route1_InitScript
 	.byte 0
 `
+
+script Route1_InitScript {
+    if (var(VAR_BELLFE_TOWN_STATE) == 1) {
+        
+    }
+}
+
+movement RivalToLab {
+    walk_fast_left * 3
+    walk_fast_down * 8
+    walk_fast_right * 4
+}
+movement PlayerToLab {
+    walk_fast_left * 4
+    walk_fast_down * 8
+    walk_fast_right * 4
+}
 
 script Route1_TestingScript {
     lockall
@@ -11,7 +31,7 @@ script Route1_TestingScript {
         giveitem(ITEM_MASTER_BALL, 99)
         giveitem(ITEM_RARE_CANDY, 999)
     }
-    
+
     showmonpic(SPECIES_CYNDAQUIL, 10,3)
     msgbox("Would you like this cyndaquil?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
