@@ -25,7 +25,7 @@ script CelebiStartEvent_TriggerSpawnScript {
     waitmovement(0)
     special(RemoveCameraObject)
 
-    setvar(VAR_TESTING, 1)
+    setvar(VAR_BELLFE_TOWN_STATE, 1)
     releaseall
 }
 

@@ -41,7 +41,7 @@ CelebiStartEvent_TriggerSpawnScript::
 # 26 "data/maps/CelebiStartEvent/scripts.pory"
 	special RemoveCameraObject
 # 28 "data/maps/CelebiStartEvent/scripts.pory"
-	setvar VAR_TESTING, 1
+	setvar VAR_BELLFE_TOWN_STATE, 1
 # 29 "data/maps/CelebiStartEvent/scripts.pory"
 	releaseall
 	return

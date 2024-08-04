@@ -98,7 +98,7 @@
       "x": 3,
       "y": 10,
       "elevation": 0,
-      "var": "BELLFE_TOWN_STATE",
+      "var": "VAR_BELLFE_TOWN_STATE",
       "var_value": "0",
       "script": "NULL"
     }
