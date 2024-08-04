@@ -1,0 +1,40 @@
+raw `
+Route1_MapScripts::
+	.byte 0
+`
+
+script Route1_TestingScript {
+    lockall
+
+    msgbox("Do you need items?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        giveitem(ITEM_MASTER_BALL, 99)
+        giveitem(ITEM_RARE_CANDY, 999)
+    }
+    
+    showmonpic(SPECIES_CYNDAQUIL, 10,3)
+    msgbox("Would you like this cyndaquil?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        givemon(SPECIES_CYNDAQUIL, 5, ITEM_MASTER_BALL)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("Ez clap, Cyndaquil is yours!")
+        waitmessage
+        setvar(VAR_TEMP_0, 1)
+        msgbox("Would you like to give Cyndaquil a nickname?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            call(Common_EventScript_GetGiftMonPartySlot)
+            call(Common_EventScript_NameReceivedPartyMon)
+        }
+    } else {
+        msgbox(msg1)
+    }
+
+    hidemonpic
+    waitmessage
+    releaseall
+    end
+}
+
+text msg1 {
+    "Weirdchamp! :("
+}
