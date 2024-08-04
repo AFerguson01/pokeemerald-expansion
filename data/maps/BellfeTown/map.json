@@ -168,6 +168,20 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE1",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN_FOREST",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 35,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN_FOREST",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

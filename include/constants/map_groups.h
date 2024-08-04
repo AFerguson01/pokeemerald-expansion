@@ -6,9 +6,10 @@
 //
 
 // gMapGroup_TownsAndRoutes
-#define MAP_BELLFE_TOWN (0 | (0 << 8))
-#define MAP_ROUTE3      (1 | (0 << 8))
-#define MAP_ROUTE1      (2 | (0 << 8))
+#define MAP_BELLFE_TOWN        (0 | (0 << 8))
+#define MAP_ROUTE3             (1 | (0 << 8))
+#define MAP_ROUTE1             (2 | (0 << 8))
+#define MAP_BELLFE_TOWN_FOREST (3 | (0 << 8))
 
 // gMapGroups_EventLocations
 #define MAP_CELEBI_START_EVENT (0 | (1 << 8))

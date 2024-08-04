@@ -40,7 +40,8 @@
   "gMapGroup_TownsAndRoutes": [
     "BellfeTown",
     "Route3",
-    "Route1"
+    "Route1",
+    "BellfeTownForest"
   ],
   "gMapGroups_EventLocations": [
     "CelebiStartEvent"
