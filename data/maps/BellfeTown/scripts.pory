@@ -15,7 +15,7 @@ script BellfeTown_GetPokemonStartScript {
     setvar(VAR_BELLFE_TOWN_STATE, 1)
     addobject(LOCALID_RIVAL)
 
-    applymovement(LOCALID_RIVAL, RivalToPlayer_1)
+    applymovement(LOCALID_RIVAL, BellfeTown_RivalToPlayer_1)
     waitmovement(0)
 
     playse(SE_PIN)
@@ -24,14 +24,14 @@ script BellfeTown_GetPokemonStartScript {
     applymovement(LOCALID_RIVAL, Common_Movement_Delay48)
 	waitmovement(0)
 
-    applymovement(LOCALID_RIVAL, RivalToPlayer_2)
+    applymovement(LOCALID_RIVAL, BellfeTown_RivalToPlayer_2)
     waitmovement(0)
 
-    msgbox(rivalMsg1, MSGBOX_NPC)
+    msgbox(BellfeTown_rivalMsg1, MSGBOX_NPC)
     waitmessage
 
-    applymovement(LOCALID_RIVAL, RivalToLab_1)
-    applymovement(OBJ_EVENT_ID_PLAYER, PlayerToLab_1)
+    applymovement(LOCALID_RIVAL, BellfeTown_RivalToLab_1)
+    applymovement(OBJ_EVENT_ID_PLAYER, BellfeTown_PlayerToLab_1)
     waitmovement(0)
     
     warp(MAP_ROUTE1, 59, 7)
@@ -40,22 +40,22 @@ script BellfeTown_GetPokemonStartScript {
 	end
 }
 
-movement RivalToPlayer_1 {
+movement BellfeTown_RivalToPlayer_1 {
     walk_right * 3
     face_up
 }
-movement RivalToPlayer_2 {
+movement BellfeTown_RivalToPlayer_2 {
     walk_fast_up
 }
-text rivalMsg1 {
+text BellfeTown_rivalMsg1 {
     "Ah! {PLAYER}! Quickly, follow me!"
 }
 
-movement RivalToLab_1 {
+movement BellfeTown_RivalToLab_1 {
     walk_fast_down
     walk_fast_left * 3
 }
-movement PlayerToLab_1 {
+movement BellfeTown_PlayerToLab_1 {
     walk_fast_down * 2
     walk_fast_left * 3
 }

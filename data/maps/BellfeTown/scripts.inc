@@ -25,7 +25,7 @@ BellfeTown_GetPokemonStartScript::
 # 16 "data/maps/BellfeTown/scripts.pory"
 	addobject LOCALID_RIVAL
 # 18 "data/maps/BellfeTown/scripts.pory"
-	applymovement LOCALID_RIVAL, RivalToPlayer_1
+	applymovement LOCALID_RIVAL, BellfeTown_RivalToPlayer_1
 # 19 "data/maps/BellfeTown/scripts.pory"
 	waitmovement 0
 # 21 "data/maps/BellfeTown/scripts.pory"
@@ -39,17 +39,17 @@ BellfeTown_GetPokemonStartScript::
 # 25 "data/maps/BellfeTown/scripts.pory"
 	waitmovement 0
 # 27 "data/maps/BellfeTown/scripts.pory"
-	applymovement LOCALID_RIVAL, RivalToPlayer_2
+	applymovement LOCALID_RIVAL, BellfeTown_RivalToPlayer_2
 # 28 "data/maps/BellfeTown/scripts.pory"
 	waitmovement 0
 # 30 "data/maps/BellfeTown/scripts.pory"
-	msgbox rivalMsg1, MSGBOX_NPC
+	msgbox BellfeTown_rivalMsg1, MSGBOX_NPC
 # 31 "data/maps/BellfeTown/scripts.pory"
 	waitmessage
 # 33 "data/maps/BellfeTown/scripts.pory"
-	applymovement LOCALID_RIVAL, RivalToLab_1
+	applymovement LOCALID_RIVAL, BellfeTown_RivalToLab_1
 # 34 "data/maps/BellfeTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerToLab_1
+	applymovement OBJ_EVENT_ID_PLAYER, BellfeTown_PlayerToLab_1
 # 35 "data/maps/BellfeTown/scripts.pory"
 	waitmovement 0
 # 37 "data/maps/BellfeTown/scripts.pory"
@@ -62,7 +62,7 @@ BellfeTown_GetPokemonStartScript::
 
 
 # 43 "data/maps/BellfeTown/scripts.pory"
-RivalToPlayer_1:
+BellfeTown_RivalToPlayer_1:
 # 44 "data/maps/BellfeTown/scripts.pory"
 	walk_right
 # 44 "data/maps/BellfeTown/scripts.pory"
@@ -74,13 +74,13 @@ RivalToPlayer_1:
 	step_end
 
 # 47 "data/maps/BellfeTown/scripts.pory"
-RivalToPlayer_2:
+BellfeTown_RivalToPlayer_2:
 # 48 "data/maps/BellfeTown/scripts.pory"
 	walk_fast_up
 	step_end
 
 # 54 "data/maps/BellfeTown/scripts.pory"
-RivalToLab_1:
+BellfeTown_RivalToLab_1:
 # 55 "data/maps/BellfeTown/scripts.pory"
 	walk_fast_down
 # 56 "data/maps/BellfeTown/scripts.pory"
@@ -92,7 +92,7 @@ RivalToLab_1:
 	step_end
 
 # 58 "data/maps/BellfeTown/scripts.pory"
-PlayerToLab_1:
+BellfeTown_PlayerToLab_1:
 # 59 "data/maps/BellfeTown/scripts.pory"
 	walk_fast_down
 # 59 "data/maps/BellfeTown/scripts.pory"
@@ -105,6 +105,6 @@ PlayerToLab_1:
 	walk_fast_left
 	step_end
 
-rivalMsg1::
+BellfeTown_rivalMsg1::
 # 50 "data/maps/BellfeTown/scripts.pory"
 	.string "Ah! {PLAYER}! Quickly, follow me!$"

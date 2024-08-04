@@ -1,23 +1,41 @@
 raw `
 .set LOCALID_RIVAL, 1
-
-Route1_MapScripts::
-    map_script MAP_SCRIPT_ON_LOAD, Route1_InitScript
-	.byte 0
 `
 
+mapscripts Route1_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Route1_InitScript
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_BELLFE_TOWN_STATE, 1: Route1_GoingToLabScript
+    ]
+}
+
 script Route1_InitScript {
+    setflag(FLAG_HIDE_RIVAL)
     if (var(VAR_BELLFE_TOWN_STATE) == 1) {
-        
+        clearflag(FLAG_HIDE_RIVAL)
     }
 }
 
-movement RivalToLab {
+script Route1_GoingToLabScript {
+    if (var(VAR_BELLFE_TOWN_STATE) == 1) {
+        lockall
+        applymovement(LOCALID_RIVAL, Route1_RivalToLab)
+        applymovement(OBJ_EVENT_ID_PLAYER, Route1_PlayerToLab)
+        waitmovement(0)
+        
+        warp(MAP_BELLFE_TOWN, 0, 20)
+        waitstate
+        releaseall
+        end
+    }
+}
+
+movement Route1_RivalToLab {
     walk_fast_left * 3
     walk_fast_down * 8
     walk_fast_right * 4
 }
-movement PlayerToLab {
+movement Route1_PlayerToLab {
     walk_fast_left * 4
     walk_fast_down * 8
     walk_fast_right * 4
@@ -46,7 +64,7 @@ script Route1_TestingScript {
             call(Common_EventScript_NameReceivedPartyMon)
         }
     } else {
-        msgbox(msg1)
+        msgbox(Route1_msg1)
     }
 
     hidemonpic
@@ -55,6 +73,6 @@ script Route1_TestingScript {
     end
 }
 
-text msg1 {
+text Route1_msg1 {
     "Weirdchamp! :("
 }

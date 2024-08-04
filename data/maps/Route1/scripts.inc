@@ -2,171 +2,204 @@
 
 # 2 "data/maps/Route1/scripts.pory"
 .set LOCALID_RIVAL, 1
-# 3 "data/maps/Route1/scripts.pory"
 
-# 4 "data/maps/Route1/scripts.pory"
 Route1_MapScripts::
-# 5 "data/maps/Route1/scripts.pory"
-    map_script MAP_SCRIPT_ON_LOAD, Route1_InitScript
 # 6 "data/maps/Route1/scripts.pory"
+	map_script MAP_SCRIPT_ON_LOAD, Route1_InitScript
+# 7 "data/maps/Route1/scripts.pory"
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
+Route1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+# 8 "data/maps/Route1/scripts.pory"
+	map_script_2 VAR_BELLFE_TOWN_STATE, 1, Route1_GoingToLabScript
+	.2byte 0
+
+
 Route1_InitScript::
-# 10 "data/maps/Route1/scripts.pory"
+# 13 "data/maps/Route1/scripts.pory"
+	setflag FLAG_HIDE_RIVAL
+# 14 "data/maps/Route1/scripts.pory"
 	compare VAR_BELLFE_TOWN_STATE, 1
 	goto_if_eq Route1_InitScript_1
 	return
 
 Route1_InitScript_1:
+# 15 "data/maps/Route1/scripts.pory"
+	clearflag FLAG_HIDE_RIVAL
 	return
 
 
-# 15 "data/maps/Route1/scripts.pory"
-RivalToLab:
-# 16 "data/maps/Route1/scripts.pory"
+Route1_GoingToLabScript::
+# 20 "data/maps/Route1/scripts.pory"
+	compare VAR_BELLFE_TOWN_STATE, 1
+	goto_if_eq Route1_GoingToLabScript_1
+	return
+
+Route1_GoingToLabScript_1:
+# 21 "data/maps/Route1/scripts.pory"
+	lockall
+# 22 "data/maps/Route1/scripts.pory"
+	applymovement LOCALID_RIVAL, Route1_RivalToLab
+# 23 "data/maps/Route1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route1_PlayerToLab
+# 24 "data/maps/Route1/scripts.pory"
+	waitmovement 0
+# 26 "data/maps/Route1/scripts.pory"
+	warp MAP_BELLFE_TOWN, 0, 20
+# 27 "data/maps/Route1/scripts.pory"
+	waitstate
+# 28 "data/maps/Route1/scripts.pory"
+	releaseall
+	end
+
+
+# 33 "data/maps/Route1/scripts.pory"
+Route1_RivalToLab:
+# 34 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 16 "data/maps/Route1/scripts.pory"
+# 34 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 16 "data/maps/Route1/scripts.pory"
+# 34 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 17 "data/maps/Route1/scripts.pory"
+# 35 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 18 "data/maps/Route1/scripts.pory"
+# 36 "data/maps/Route1/scripts.pory"
 	walk_fast_right
-# 18 "data/maps/Route1/scripts.pory"
+# 36 "data/maps/Route1/scripts.pory"
 	walk_fast_right
-# 18 "data/maps/Route1/scripts.pory"
+# 36 "data/maps/Route1/scripts.pory"
 	walk_fast_right
-# 18 "data/maps/Route1/scripts.pory"
+# 36 "data/maps/Route1/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 20 "data/maps/Route1/scripts.pory"
-PlayerToLab:
-# 21 "data/maps/Route1/scripts.pory"
+# 38 "data/maps/Route1/scripts.pory"
+Route1_PlayerToLab:
+# 39 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 21 "data/maps/Route1/scripts.pory"
+# 39 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 21 "data/maps/Route1/scripts.pory"
+# 39 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 21 "data/maps/Route1/scripts.pory"
+# 39 "data/maps/Route1/scripts.pory"
 	walk_fast_left
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 22 "data/maps/Route1/scripts.pory"
+# 40 "data/maps/Route1/scripts.pory"
 	walk_fast_down
-# 23 "data/maps/Route1/scripts.pory"
+# 41 "data/maps/Route1/scripts.pory"
 	walk_fast_right
-# 23 "data/maps/Route1/scripts.pory"
+# 41 "data/maps/Route1/scripts.pory"
 	walk_fast_right
-# 23 "data/maps/Route1/scripts.pory"
+# 41 "data/maps/Route1/scripts.pory"
 	walk_fast_right
-# 23 "data/maps/Route1/scripts.pory"
+# 41 "data/maps/Route1/scripts.pory"
 	walk_fast_right
 	step_end
 
 Route1_TestingScript::
-# 27 "data/maps/Route1/scripts.pory"
+# 45 "data/maps/Route1/scripts.pory"
 	lockall
-# 29 "data/maps/Route1/scripts.pory"
+# 47 "data/maps/Route1/scripts.pory"
 	msgbox Route1_TestingScript_Text_0, MSGBOX_YESNO
-# 30 "data/maps/Route1/scripts.pory"
+# 48 "data/maps/Route1/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route1_TestingScript_2
 Route1_TestingScript_1:
-# 35 "data/maps/Route1/scripts.pory"
+# 53 "data/maps/Route1/scripts.pory"
 	showmonpic SPECIES_CYNDAQUIL, 10, 3
-# 36 "data/maps/Route1/scripts.pory"
+# 54 "data/maps/Route1/scripts.pory"
 	msgbox Route1_TestingScript_Text_1, MSGBOX_YESNO
-# 37 "data/maps/Route1/scripts.pory"
+# 55 "data/maps/Route1/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route1_TestingScript_5
-# 49 "data/maps/Route1/scripts.pory"
-	msgbox msg1
+# 67 "data/maps/Route1/scripts.pory"
+	msgbox Route1_msg1
 Route1_TestingScript_4:
-# 52 "data/maps/Route1/scripts.pory"
+# 70 "data/maps/Route1/scripts.pory"
 	hidemonpic
-# 53 "data/maps/Route1/scripts.pory"
+# 71 "data/maps/Route1/scripts.pory"
 	waitmessage
-# 54 "data/maps/Route1/scripts.pory"
+# 72 "data/maps/Route1/scripts.pory"
 	releaseall
 	end
 
 Route1_TestingScript_2:
-# 31 "data/maps/Route1/scripts.pory"
+# 49 "data/maps/Route1/scripts.pory"
 	giveitem ITEM_MASTER_BALL, 99
-# 32 "data/maps/Route1/scripts.pory"
+# 50 "data/maps/Route1/scripts.pory"
 	giveitem ITEM_RARE_CANDY, 999
 	goto Route1_TestingScript_1
 
 Route1_TestingScript_5:
-# 38 "data/maps/Route1/scripts.pory"
+# 56 "data/maps/Route1/scripts.pory"
 	givemon SPECIES_CYNDAQUIL, 5, ITEM_MASTER_BALL
-# 39 "data/maps/Route1/scripts.pory"
+# 57 "data/maps/Route1/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 40 "data/maps/Route1/scripts.pory"
+# 58 "data/maps/Route1/scripts.pory"
 	msgbox Route1_TestingScript_Text_2
-# 41 "data/maps/Route1/scripts.pory"
+# 59 "data/maps/Route1/scripts.pory"
 	waitmessage
-# 42 "data/maps/Route1/scripts.pory"
+# 60 "data/maps/Route1/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 43 "data/maps/Route1/scripts.pory"
+# 61 "data/maps/Route1/scripts.pory"
 	msgbox Route1_TestingScript_Text_3, MSGBOX_YESNO
-# 44 "data/maps/Route1/scripts.pory"
+# 62 "data/maps/Route1/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq Route1_TestingScript_8
 	goto Route1_TestingScript_4
 
 Route1_TestingScript_8:
-# 45 "data/maps/Route1/scripts.pory"
+# 63 "data/maps/Route1/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 46 "data/maps/Route1/scripts.pory"
+# 64 "data/maps/Route1/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto Route1_TestingScript_4
 
 
 Route1_TestingScript_Text_0:
-# 29 "data/maps/Route1/scripts.pory"
+# 47 "data/maps/Route1/scripts.pory"
 	.string "Do you need items?$"
 
 Route1_TestingScript_Text_1:
-# 36 "data/maps/Route1/scripts.pory"
+# 54 "data/maps/Route1/scripts.pory"
 	.string "Would you like this cyndaquil?$"
 
 Route1_TestingScript_Text_2:
-# 40 "data/maps/Route1/scripts.pory"
+# 58 "data/maps/Route1/scripts.pory"
 	.string "Ez clap, Cyndaquil is yours!$"
 
 Route1_TestingScript_Text_3:
-# 43 "data/maps/Route1/scripts.pory"
+# 61 "data/maps/Route1/scripts.pory"
 	.string "Would you like to give Cyndaquil a nickname?$"
 
-msg1::
-# 58 "data/maps/Route1/scripts.pory"
+Route1_msg1::
+# 76 "data/maps/Route1/scripts.pory"
 	.string "Weirdchamp! :($"
