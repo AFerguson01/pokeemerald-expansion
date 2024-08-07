@@ -21670,7 +21670,6 @@ static const u16 sSimisearTeachableLearnset[] = {
     MOVE_FACADE,
     MOVE_FIRE_BLAST,
     MOVE_FLAMETHROWER,
-    MOVE_SHADOW_BALL,
     MOVE_FOCUS_PUNCH,
     MOVE_HYPER_BEAM,
     MOVE_IRON_TAIL,
