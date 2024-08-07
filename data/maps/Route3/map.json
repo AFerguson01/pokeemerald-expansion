@@ -65,6 +65,34 @@
       "elevation": 0,
       "dest_map": "MAP_BELLFE_TOWN",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_BELLFE_TOWN",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
