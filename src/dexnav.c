@@ -2070,7 +2070,7 @@ static u16 DexNavGetSpecies(void)
         species = sDexNavUiDataPtr->landSpecies[sDexNavUiDataPtr->cursorCol];
         break;
     case ROW_LAND_BOT:
-        species = sDexNavUiDataPtr->landSpecies[sDexNavUiDataPtr->cursorCol + COL_LAND_COUNT];
+        species = sDexNavUiDataPtr->landSpecies[sDexNavUiDataPtr->cursorCol + 6];
         break;
     case ROW_HIDDEN:
         if (!FlagGet(FLAG_SYS_DETECTOR_MODE))

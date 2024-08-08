@@ -12,6 +12,7 @@ mapscripts Route1_MapScripts {
 script Route1_InitScript {
     setflag(FLAG_HIDE_RIVAL)
     setflag(FLAG_SYS_DEXNAV_GET)
+    setflag(FLAG_SYS_DETECTOR_MODE)
     if (var(VAR_BELLFE_TOWN_STATE) == 1) {
         clearflag(FLAG_HIDE_RIVAL)
     }

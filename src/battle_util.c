@@ -9562,7 +9562,7 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         break;
     case ABILITY_DEFEATIST:
         if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.33));
         break;
     case ABILITY_FLASH_FIRE:
         if (moveType == TYPE_FIRE && gBattleResources->flags->flags[battlerAtk] & RESOURCE_FLAG_FLASH_FIRE)
