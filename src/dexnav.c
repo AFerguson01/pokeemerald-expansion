@@ -2015,6 +2015,7 @@ static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
     if (species == SPECIES_NONE || species > NUM_SPECIES)
         CreateNoDataIcon(x, y);   //'X' in slot
     else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    // if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
         CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0); //question mark
     else
         CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0);
@@ -2025,20 +2026,34 @@ static void DrawSpeciesIcons(void)
     s16 x, y;
     u32 i;
     u16 species;
+    u32 landMonsCount = 0;
     
     LoadCompressedSpriteSheetUsingHeap(&sNoDataIconSpriteSheet);
     for (i = 0; i < LAND_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->landSpecies[i];
-        x = 20 + (24 * (i % 6));
-        y = ROW_LAND_TOP_ICON_Y + (i > 5 ? 28 : 0);
-        TryDrawIconInSlot(species, x, y);
+        // If there is a mon which is within our number of mons AND it's not already drawn: draw it.
+        if (species != SPECIES_NONE && species <= NUM_SPECIES && !SpeciesInArray(species, 2)) {
+            x = ROW_LAND_ICON_X + (28 * (landMonsCount % 6));
+            y = ROW_LAND_TOP_ICON_Y + (landMonsCount > 5 ? 28 : 0);
+            TryDrawIconInSlot(species, x, y);
+            landMonsCount++;
+        }
+    }
+    // Fill any empty slots with 'X' icon
+    if (landMonsCount < 12) {
+        for (i = landMonsCount; i < 12; i++) {
+            x = ROW_LAND_ICON_X + (28 * (i % 6));
+            y = ROW_LAND_TOP_ICON_Y + (i > 5 ? 28 : 0);
+
+            CreateNoDataIcon(x, y);
+        }
     }
     
     for (i = 0; i < WATER_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->waterSpecies[i];
-        x = 30 + 24 * i;
+        x = ROW_WATER_ICON_X + 28 * i;
         y = ROW_WATER_ICON_Y;
         TryDrawIconInSlot(species, x, y);
     }
@@ -2046,7 +2061,7 @@ static void DrawSpeciesIcons(void)
     for (i = 0; i < HIDDEN_WILD_COUNT; i++)
     {
         species = sDexNavUiDataPtr->hiddenSpecies[i];
-        x = ROW_HIDDEN_ICON_X + 24 * i;
+        x = ROW_HIDDEN_ICON_X + 28 * i;
         y = ROW_HIDDEN_ICON_Y;
         if (FlagGet(FLAG_SYS_DETECTOR_MODE))
             TryDrawIconInSlot(species, x, y);

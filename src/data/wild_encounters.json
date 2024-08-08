@@ -14959,7 +14959,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_WHISCASH"
               }
             ]
           },
@@ -15034,7 +15034,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_DIALGA"
+                "species": "SPECIES_DRATINI"
               }
             ]
           }
