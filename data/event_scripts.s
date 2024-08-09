@@ -1086,3 +1086,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BellfeTownForest/scripts.inc"
     .include "data/scripts/dexnav.inc"
     
+
+	.include "data/maps/Route2/scripts.inc"

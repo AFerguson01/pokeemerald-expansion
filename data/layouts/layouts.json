@@ -5352,6 +5352,18 @@
       "secondary_tileset": "gTileset_BelffeTown",
       "border_filepath": "data/layouts/BellfeTownForest/border.bin",
       "blockdata_filepath": "data/layouts/BellfeTownForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 30,
+      "height": 24,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Forest",
+      "secondary_tileset": "gTileset_BelffeTown",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
     }
   ]
 }
