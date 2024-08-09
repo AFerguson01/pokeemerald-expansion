@@ -133,6 +133,16 @@
 #define BERRY_TREE_ROUTE_123_PECHA    87
 #define BERRY_TREE_ROUTE_123_SITRUS   88
 #define BERRY_TREE_ROUTE_123_RAWST    89
+#define BERRY_TREE_BELLFE_1           90
+#define BERRY_TREE_BELLFE_2           91
+#define BERRY_TREE_BELLFE_3           92
+#define BERRY_TREE_BELLFE_4           93
+#define BERRY_TREE_BELLFE_5           94
+#define BERRY_TREE_BELLFE_6           95
+#define BERRY_TREE_BELLFE_7           96
+#define BERRY_TREE_BELLFE_8           97
+#define BERRY_TREE_BELLFE_9           98
+#define BERRY_TREE_BELLFE_10          99
 
 // Remainder are unused
 
