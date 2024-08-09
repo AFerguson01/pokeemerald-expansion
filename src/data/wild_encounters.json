@@ -14646,7 +14646,7 @@
               {
                 "min_level": 2,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 3,
@@ -14696,7 +14696,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": ""
+                "species": "SPECIES_BONSLY"
               },
               {
                 "min_level": 3,
@@ -14727,6 +14727,26 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_SNIVY"
+              }
+            ]
+          },
+          "hidden_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RIOLU"
               }
             ]
           }
@@ -14957,9 +14977,9 @@
                 "species": "SPECIES_DRAGONAIR"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WHISCASH"
+                "min_level": 30,
+                "max_level": 35,
+                "species": "SPECIES_DRAGONAIR"
               }
             ]
           },
@@ -15022,18 +15042,18 @@
             "encounter_rate": 0,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 7,
+                "max_level": 10,
                 "species": "SPECIES_DRATINI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 7,
+                "max_level": 10,
                 "species": "SPECIES_DRATINI"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 7,
+                "max_level": 10,
                 "species": "SPECIES_DRATINI"
               }
             ]

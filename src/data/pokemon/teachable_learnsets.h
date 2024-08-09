@@ -12010,7 +12010,6 @@ static const u16 sRaikouTeachableLearnset[] = {
     MOVE_ROAR,
     MOVE_ROCK_SMASH,
     MOVE_SANDSTORM,
-    MOVE_SCALD,
     MOVE_SHADOW_BALL,
     MOVE_SHOCK_WAVE,
     MOVE_STRENGTH,
@@ -12028,7 +12027,6 @@ static const u16 sRaikouTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_THUNDER_WAVE,
-    MOVE_ENERGY_BALL,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_RAIKOU
@@ -12039,7 +12037,6 @@ static const u16 sEnteiTeachableLearnset[] = {
     MOVE_CUT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
-    MOVE_EARTHQUAKE,
     MOVE_FACADE,
     MOVE_FIRE_BLAST,
     MOVE_FLAMETHROWER,
@@ -12104,7 +12101,6 @@ static const u16 sSuicuneTeachableLearnset[] = {
     MOVE_ICY_WIND,
     MOVE_MUD_SLAP,
     MOVE_PSYCH_UP,
-    MOVE_PSYCHIC,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_SWAGGER,
