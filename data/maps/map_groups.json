@@ -1,6 +1,7 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
+    "gMapGroup_BellfeTown",
     "gMapGroups_EventLocations",
     "gMapGroup_TownsAndRoutesOLD",
     "gMapGroup_IndoorLittleroot",
@@ -43,6 +44,9 @@
     "Route1",
     "BellfeTownForest",
     "Route2"
+  ],
+  "gMapGroup_BellfeTown": [
+
   ],
   "gMapGroups_EventLocations": [
     "CelebiStartEvent"
