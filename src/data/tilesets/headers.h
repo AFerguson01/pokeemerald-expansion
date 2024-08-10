@@ -868,3 +868,14 @@ const struct Tileset gTileset_PorytilesSecondaryTutorial =
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryTutorial,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Bellfe_Pokecenter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Bellfe_Pokecenter,
+    .palettes = gTilesetPalettes_Bellfe_Pokecenter,
+    .metatiles = gMetatiles_Bellfe_Pokecenter,
+    .metatileAttributes = gMetatileAttributes_Bellfe_Pokecenter,
+    .callback = NULL,
+};

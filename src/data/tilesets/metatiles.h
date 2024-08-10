@@ -218,3 +218,6 @@ const u16 gMetatileAttributes_PorytilesPrimaryTutorial[] = INCBIN_U16("data/tile
 
 const u16 gMetatiles_PorytilesSecondaryTutorial[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_tutorial/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesSecondaryTutorial[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_tutorial/metatile_attributes.bin");
+
+const u16 gMetatiles_Bellfe_Pokecenter[] = INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/metatiles.bin");
+const u16 gMetatileAttributes_Bellfe_Pokecenter[] = INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/metatile_attributes.bin");

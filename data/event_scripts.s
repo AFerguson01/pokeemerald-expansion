@@ -1088,3 +1088,11 @@ EventScript_VsSeekerChargingDone::
     
 
 	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/PlayerHouse/scripts.inc"
+
+	.include "data/maps/PlayerHouse_2F/scripts.inc"
+
+	.include "data/maps/Lab/scripts.inc"
+
+	.include "data/maps/Bellfe_Pokecenter/scripts.inc"

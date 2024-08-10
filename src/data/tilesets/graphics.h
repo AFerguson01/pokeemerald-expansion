@@ -1710,3 +1710,22 @@ const u16 gTilesetPalettes_PorytilesSecondaryTutorial[][16] =
 };
 
 const u32 gTilesetTiles_PorytilesSecondaryTutorial[] = INCBIN_U32("data/tilesets/secondary/porytiles_secondary_tutorial/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Bellfe_Pokecenter[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/bellfe_pokecenter/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Bellfe_Pokecenter[] = INCBIN_U32("data/tilesets/secondary/bellfe_pokecenter/tiles.4bpp.lz");

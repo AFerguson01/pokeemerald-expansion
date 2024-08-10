@@ -46,7 +46,10 @@
     "Route2"
   ],
   "gMapGroup_BellfeTown": [
-
+    "PlayerHouse",
+    "PlayerHouse_2F",
+    "Lab",
+    "Bellfe_Pokecenter"
   ],
   "gMapGroups_EventLocations": [
     "CelebiStartEvent"
